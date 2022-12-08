@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 
-const Ejercicio1 = () => {
+const Ejercicio1: FC = () => {
   const [counter, setCounter] = useState(0);
 
   const countClicks = () => {

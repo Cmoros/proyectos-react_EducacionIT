@@ -1,6 +1,10 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, FC } from "react";
 
-function Ejemplo2(props: PropsWithChildren) {
+interface Ejemplo2Props extends PropsWithChildren {
+  test?: string;
+}
+
+const Ejemplo2: FC<Ejemplo2Props> = (props) => {
   console.log(props.children);
   return (
     <div>
@@ -8,6 +12,6 @@ function Ejemplo2(props: PropsWithChildren) {
       <div className="flex flex-col">{props.children}</div>
     </div>
   );
-}
+};
 
 export default Ejemplo2;

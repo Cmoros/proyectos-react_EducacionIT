@@ -1,6 +1,6 @@
-import { CSSProperties, useState } from "react";
+import { CSSProperties, FC, useState } from "react";
 
-const RepasoClaseAnterior = () => {
+const RepasoClaseAnterior: FC = () => {
   const [counter, setCounter] = useState(0);
   // const style: CSSProperties = {
   //   height: 300,

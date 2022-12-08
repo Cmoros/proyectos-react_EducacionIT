@@ -1,5 +1,6 @@
 // import { Ejemplo1B } from "./Ejemplo1";
 // import Ejercicio1 from "./Ejercicio1";
+import { FC } from "react";
 import Ejemplo2 from "./Ejemplo2";
 import Ejercicio2 from "./Ejercicio2";
 import ItemListaSimple from "./ItemLista";
@@ -13,7 +14,7 @@ const json = [
   { detalle: "Hacer las compras 5" },
 ];
 
-function App() {
+const App: FC = () => {
   return (
     <div className="flex h-screen flex-col items-center justify-center">
       {/* <RepasoClaseAnterior />
@@ -27,6 +28,6 @@ function App() {
       </Ejemplo2>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,11 +1,6 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 
-interface props {
-  detalle: string;
-  key: string;
-}
-
-const Subcomponente = () => {
+const Subcomponente: FC = () => {
   return (
     <div className="item-lista-simple__tapa">
       <button>Modificar</button>
@@ -13,7 +8,12 @@ const Subcomponente = () => {
   );
 };
 
-const ItemListaSimple = (props: props) => {
+interface ItemListProps {
+  detalle: string;
+  key: string;
+}
+
+const ItemListaSimple: FC<ItemListProps> = (props) => {
   const [mostrar, setMostrar] = useState(false);
 
   return (

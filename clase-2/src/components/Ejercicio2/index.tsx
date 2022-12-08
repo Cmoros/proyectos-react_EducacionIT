@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 
-function Ejercicio2() {
+const Ejercicio2: FC = () => {
   const [text, setText] = useState("");
 
   return (
@@ -14,6 +14,6 @@ function Ejercicio2() {
       />
     </div>
   );
-}
+};
 
 export default Ejercicio2;
