@@ -1,0 +1,12 @@
+.App {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
